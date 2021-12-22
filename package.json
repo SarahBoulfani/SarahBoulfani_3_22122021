@@ -1,0 +1,21 @@
+{
+  "name": "p3_boulfani_sarah",
+  "version": "1.0.0",
+  "description": "reservation menu",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix":"postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahBoulfani/_3_22122021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/SarahBoulfani/_3_22122021/issues"
+  },
+  "homepage": "https://github.com/SarahBoulfani/_3_22122021#readme"
+}
