@@ -1,0 +1,7 @@
+.header{
+   @include flex-center;
+   background-color: $color-white;
+   height: 70px;
+   @include shadow;
+    
+}
