@@ -1,0 +1,17 @@
+
+.localisation{
+     background-color: darkred;
+     @include flex-center;
+     @include flex-column;
+
+  &__city{
+      @include flex-center;
+          background: darkmagenta;
+        &__icon{
+            background-color: darkblue;
+        }
+        &__town{
+            background-color: rgb(26, 100, 84);
+        }
+    }
+}

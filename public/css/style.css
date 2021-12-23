@@ -43,4 +43,25 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.localisation {
+  background-color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.localisation__city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkmagenta;
+}
+.localisation__city__icon {
+  background-color: darkblue;
+}
+.localisation__city__town {
+  background-color: #1a6454;
+}
+
 /*# sourceMappingURL=style.css.map */
