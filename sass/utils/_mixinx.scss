@@ -5,10 +5,9 @@
 }
 
 @mixin shadow {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
 }
 
 @mixin flex-column {
-    display: flex;
     flex-direction: column;
 }

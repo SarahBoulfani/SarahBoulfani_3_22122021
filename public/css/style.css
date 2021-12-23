@@ -34,34 +34,70 @@ h1 {
   font-weight: 300;
 }
 
+.btn {
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  border: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   height: 70px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
 }
 
 .localisation {
-  background-color: darkred;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
 }
 .localisation__city {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: darkmagenta;
+  background: #eaeaea;
+  width: 100%;
+  height: 46px;
 }
-.localisation__city__icon {
-  background-color: darkblue;
+.localisation__city .fa-map-marker-alt {
+  font-size: 16px;
 }
-.localisation__city__town {
-  background-color: #1a6454;
+.localisation__city .fa-map-marker-alt::before {
+  top: 10px;
+  top: -2px;
+  position: relative;
+  right: 16px;
+  font-size: 16px;
+  color: #353535;
+}
+.localisation__city p {
+  font-size: 16px;
+  color: #353535;
+  font-weight: 600;
+}
+.localisation__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 235px;
+  text-align: center;
+}
+.localisation__info h2 {
+  font-size: 30px;
+}
+.localisation__info p {
+  font-size: 18px;
+  color: #353535;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
