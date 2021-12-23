@@ -100,4 +100,58 @@ h1 {
   margin-bottom: 30px;
 }
 
+.fonction {
+  height: 410px;
+  background: #fff;
+  margin: 50px 0;
+  padding: 20px 0;
+}
+.fonction h2 {
+  font-size: 28px;
+  padding: 20px;
+}
+.fonction__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fonction__steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #F2F2F2;
+  margin: 10Px;
+  border-radius: 20px;
+  width: 80%;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fonction__steps span {
+  height: 28px;
+  padding: 7px 10px;
+  background: #9356DC;
+  border-radius: 50%;
+  position: relative;
+  right: 58px;
+  color: #fff;
+  font-size: 14px;
+}
+.fonction__steps i {
+  font-size: 18px;
+  position: relative;
+  right: 30px;
+  color: #545353e0;
+}
+.fonction__steps--purple {
+  color: #9356DC;
+}
+.fonction__steps--purple::before {
+  color: #9356DC;
+}
+.fonction__steps p {
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=style.css.map */
