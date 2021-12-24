@@ -51,6 +51,32 @@ h1 {
   box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
 }
 
+.footer {
+  background: #353535;
+  color: #fff;
+  background: #353535;
+  line-height: 28px;
+  height: 190px;
+  padding: 20px;
+  margin-top: 50px;
+}
+.footer a {
+  color: #fff;
+}
+.footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.footer__link .fa-utensils::before {
+  content: "\f2e7";
+  margin-right: 5px;
+}
+.footer__link .fa-hands-helping::before {
+  content: "\f4c4";
+  margin-right: 5px;
+}
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -156,7 +182,6 @@ h1 {
 }
 
 .restaurant {
-  height: 600px;
   padding: 0 20px;
 }
 .restaurant h2 {
