@@ -1,7 +1,7 @@
-
-.header{
+//header
+.header--shadow{
     box-shadow: none;
-
+    
 
  .fa-arrow-left::before {
     content: "\f060";
@@ -9,4 +9,83 @@
     top: 28px;
     left: 22px; 
 }
+}
+.image{
+    position: relative;
+    object-fit: cover;
+}
+// Main
+.main{
+    height: 968px;
+    margin-bottom: 170px;
+}
+.global{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    top: 266px;
+    width: 100%;
+    background: $color-grey;
+  
+    &__title{
+        @include flex-center;
+        justify-content: space-between;
+        padding: 35px 30px 0 15px;
+        font-family: 'Shrikhand';
+        font-size: 18px;
+        .fa-heart:before {
+            content: "\f004";
+            font-size: 30px;
+            color: #545353e0;
+           }
+    }
+    &__menu{
+        margin: 0px;
+    }
+}
+
+.global__menu-choice{
+    @include flex-column;
+    
+    margin: 35px 15px;
+    h2{
+       
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+    
+    }
+    
+}
+hr{
+    width: 47px;
+    height: 3px;
+    background: #99e2d0;
+    border: none;
+    margin: 3px 0 10px 3px;  
+}
+
+
+    .card-choice{
+        background: $color-white;
+        border-radius: 15px;
+        padding: 10px;
+        line-height: 23px;
+        margin: 8px 0;
+        @include shadow-box;
+        &__text{
+            
+            h3{
+                font-size: 18px;
+            }
+        }
+        &__price{
+            padding-right: 15px;
+            @include flex-center;
+            justify-content: space-between;
+         
+        }
+    }
+.center{
+    @include flex-center;
 }

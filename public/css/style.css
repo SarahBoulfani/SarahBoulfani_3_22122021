@@ -41,6 +41,9 @@ h1 {
   border-radius: 30px;
   border: none;
 }
+.btn--center {
+  width: 50%;
+}
 
 .header {
   display: flex;
@@ -56,6 +59,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
 }
 .localisation__city {
@@ -86,6 +90,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
   width: 90%;
   height: 235px;
@@ -115,6 +120,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
 }
 .fonction__steps {
@@ -210,14 +216,94 @@ h1 {
   color: #545353e0;
 }
 
-.header {
+.header--shadow {
   box-shadow: none;
 }
-.header .fa-arrow-left::before {
+.header--shadow .fa-arrow-left::before {
   content: "\f060";
   position: absolute;
   top: 28px;
   left: 22px;
+}
+
+.image {
+  position: relative;
+  object-fit: cover;
+}
+
+.main {
+  height: 968px;
+  margin-bottom: 170px;
+}
+
+.global {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: absolute;
+  top: 266px;
+  width: 100%;
+  background: #F2F2F2;
+}
+.global__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 30px 0 15px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+}
+.global__title .fa-heart:before {
+  content: "\f004";
+  font-size: 30px;
+  color: #545353e0;
+}
+.global__menu {
+  margin: 0px;
+}
+
+.global__menu-choice {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 15px;
+}
+.global__menu-choice h2 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 47px;
+  height: 3px;
+  background: #99e2d0;
+  border: none;
+  margin: 3px 0 10px 3px;
+}
+
+.card-choice {
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  line-height: 23px;
+  margin: 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-choice__text h3 {
+  font-size: 18px;
+}
+.card-choice__price {
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -239,11 +325,11 @@ h1 {
 }
 .footer__link .fa-utensils::before {
   content: "\f2e7";
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .footer__link .fa-hands-helping::before {
   content: "\f4c4";
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

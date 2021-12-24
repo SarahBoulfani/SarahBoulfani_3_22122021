@@ -3,5 +3,8 @@
     color: $color-white;
     background: $gradient;
     border-radius: 30px;
-    border: none;   
+    border: none;
+    &--center{
+        width: 50%;
+    }
 }
