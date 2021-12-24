@@ -48,33 +48,8 @@ h1 {
   align-items: center;
   background-color: #fff;
   height: 70px;
+  position: relative;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -2px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
-}
-
-.footer {
-  background: #353535;
-  color: #fff;
-  background: #353535;
-  line-height: 28px;
-  height: 190px;
-  padding: 20px;
-  margin-top: 50px;
-}
-.footer a {
-  color: #fff;
-}
-.footer h3 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-.footer__link .fa-utensils::before {
-  content: "\f2e7";
-  margin-right: 5px;
-}
-.footer__link .fa-hands-helping::before {
-  content: "\f4c4";
-  margin-right: 5px;
 }
 
 .localisation {
@@ -233,6 +208,42 @@ h1 {
   font-size: 25px;
   margin-right: 10px;
   color: #545353e0;
+}
+
+.header {
+  box-shadow: none;
+}
+.header .fa-arrow-left::before {
+  content: "\f060";
+  position: absolute;
+  top: 28px;
+  left: 22px;
+}
+
+.footer {
+  background: #353535;
+  color: #fff;
+  background: #353535;
+  line-height: 28px;
+  height: 190px;
+  padding: 20px;
+  margin-top: 50px;
+}
+.footer a {
+  color: #fff;
+}
+.footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.footer__link .fa-utensils::before {
+  content: "\f2e7";
+  margin-right: 5px;
+}
+.footer__link .fa-hands-helping::before {
+  content: "\f4c4";
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
