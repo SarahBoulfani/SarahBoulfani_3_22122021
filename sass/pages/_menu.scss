@@ -77,13 +77,16 @@ hr{
             
             h3{
                 font-size: 18px;
+                @include overflow;
             }
         }
         &__price{
             padding-right: 15px;
             @include flex-center;
             justify-content: space-between;
-         
+            p:first-child{
+           @include overflow;
+            }
         }
     }
 .center{
