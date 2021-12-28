@@ -4,7 +4,15 @@
     background: $gradient;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+    @include shadow-box;
     &--center{
         width: 50%;
     }
+    &:hover {
+        background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
+        box-shadow: rgb(0 0 0 / 30%) 0px 0px 10px;
+      }
+    
 }
+

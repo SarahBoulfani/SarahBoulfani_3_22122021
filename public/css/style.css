@@ -40,9 +40,15 @@ h1 {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
   border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .btn--center {
   width: 50%;
+}
+.btn:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
 }
 
 .header {
@@ -52,7 +58,7 @@ h1 {
   background-color: #fff;
   height: 70px;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -2px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+  box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .localisation {
@@ -68,7 +74,7 @@ h1 {
   align-items: center;
   background: #eaeaea;
   width: 100%;
-  height: 46px;
+  height: 55px;
 }
 .localisation__city .fa-map-marker-alt {
   font-size: 16px;
@@ -187,7 +193,6 @@ h1 {
 }
 .restaurant__card .new {
   background: #99e2d0;
-  color: #56ad97;
   padding: 8px 16px;
   color: #139273;
   font-weight: 600;
@@ -228,12 +233,17 @@ h1 {
 
 .image {
   position: relative;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
 }
 
 .main {
   height: 968px;
   margin-bottom: 170px;
+}
+.main--note {
+  height: 1037px;
 }
 
 .global {
