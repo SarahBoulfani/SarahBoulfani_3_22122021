@@ -51,6 +51,44 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
 }
 
+.icon {
+  fill: transparent;
+  stroke: black;
+  font-weight: 100;
+  stroke-width: 20;
+  cursor: pointer;
+  position: relative;
+}
+.icon svg {
+  overflow: visible;
+  width: 2rem;
+}
+.icon .heart-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  stroke: none;
+}
+.icon .heart-main:hover {
+  animation: stroke-animation 2s ease-in-out forwards;
+}
+
+@keyframes stroke-animation {
+  50% {
+    stroke: none;
+    fill: url(#grad1);
+    transform: scale(1.1);
+  }
+  90% {
+    stroke: none;
+    transform: scale(1);
+  }
+  100% {
+    stroke: none;
+    fill: url(#grad1);
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -214,11 +252,6 @@ h1 {
 }
 .restaurant__card-text p {
   margin-top: 5px;
-}
-.restaurant__card .heart {
-  font-size: 25px;
-  margin-right: 10px;
-  color: #545353e0;
 }
 
 .header--shadow {
