@@ -51,6 +51,58 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+  opacity: 1;
+  visibility: visible;
+  animation: loader 3s linear;
+  animation-fill-mode: forwards;
+}
+.loader p {
+  position: absolute;
+  font-size: 22px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+}
+.loader__spinner {
+  width: 150px;
+  height: 150px;
+  border: 6px solid #f7f3f3;
+  opacity: 1;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  border-bottom-color: #9356DC;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spin 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 .icon {
   fill: transparent;
   stroke: black;
