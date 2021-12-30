@@ -40,15 +40,15 @@ h1 {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
   border: none;
-  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .btn--center {
   width: 50%;
 }
 .btn:hover {
-  background: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
 }
 
 .loader {
