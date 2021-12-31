@@ -78,7 +78,35 @@ hr{
         padding: 10px;
         line-height: 23px;
         margin: 8px 0;
+      
+        
         @include shadow-box;
+        position: relative;
+        &__slide{
+            position: absolute;
+            height: 66px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            top: 0;
+            right: 0;
+            
+            background: $color-tertiary;
+            width: 70px;
+            @include flex-center;
+            visibility: hidden;
+            transition: margin-right 900ms;
+            
+          
+            
+        } 
+
+        .fa-check-circle{
+            color: $color-white;
+            font-size: 22px;
+            
+        }
+        
+        
         &__text{
             
             h3{
@@ -94,7 +122,40 @@ hr{
            @include overflow;
             }
         }
+        &:hover{
+            
+            cursor: pointer;
+            > .card-choice__slide{
+              visibility: visible;
+              margin-right: 70px;
+            }
+             > .fa-check-circle{
+               visibility: visible;
+               animation: icon 500ms linear;
+               
+            } 
+        }
     }
+//bouton commander
 .center{
     @include flex-center;
+
 }
+  
+//anim
+ @keyframes icon {
+    0% {
+        transform: rotate(0deg);
+        visibility: visible;
+       
+    }
+    70%{
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        visibility: hidden;
+      
+    }
+} 
