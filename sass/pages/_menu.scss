@@ -78,8 +78,6 @@ hr{
         padding: 10px;
         line-height: 23px;
         margin: 8px 0;
-      
-        
         @include shadow-box;
         position: relative;
         &__slide{
@@ -88,27 +86,22 @@ hr{
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             top: 0;
-            right: 0;
-            
+            right:0;
             background: $color-tertiary;
             width: 70px;
             @include flex-center;
-            visibility: hidden;
-            transition: margin-right 900ms;
+            visibility: hidden; 
             
-          
-            
+               
         } 
 
         .fa-check-circle{
             color: $color-white;
-            font-size: 22px;
-            
+            font-size: 22px;   
         }
-        
-        
+         
         &__text{
-            
+            transition: margin-right 500ms ease-in-out;
             h3{
                 font-size: 18px;
                 @include overflow;
@@ -119,43 +112,73 @@ hr{
             @include flex-center;
             justify-content: space-between;
             p:first-child{
-           @include overflow;
+            @include overflow;
+           
             }
         }
         &:hover{
             
             cursor: pointer;
-            > .card-choice__slide{
-              visibility: visible;
-              margin-right: 70px;
+            > .card-choice__text{
+                
+                > .card-choice__price :nth-child(2){
+                
+                margin-right:60px;  // change transform to margin-right 
+                    
+                }
             }
-             > .fa-check-circle{
-               visibility: visible;
-               animation: icon 500ms linear;
-               
-            } 
+            > .card-choice__slide{
+              
+              animation: slide 500ms linear; 
+              visibility: visible;
+             
+                
+                     > .fa-check-circle{
+                        animation: icon 500ms linear;   
+                    } 
+            }
+            
         }
     }
+
+
 //bouton commander
 .center{
     @include flex-center;
 
 }
   
-//anim
+//animation icon check
  @keyframes icon {
     0% {
-        transform: rotate(0deg);
-        visibility: visible;
+        transform: rotate(180deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+      
+    }
+
+ 
+} 
+
+  
+//animation slide
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+        
        
     }
     70%{
-        transform: rotate(180deg);
+        transform: translateX(-20%);
+        
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: translateX(-50%);
         visibility: hidden;
+        
       
     }
 } 
