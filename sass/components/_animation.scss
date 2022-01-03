@@ -121,3 +121,31 @@
       }
    
   }
+  //animation menu
+  $anim-dur: 1200ms;
+  $num-menu: 10;
+  $anim-delay: $anim-dur/$num-menu;
+  
+      .card-choice{
+          animation: menu $anim-dur ease-in-out both ;
+          @for $i from 1 through $num-menu{
+              &--#{$i}{
+                  animation-delay: $anim-delay * $i ;
+              }
+          }
+      }
+    
+  
+
+  @keyframes menu{
+      0%{
+        
+          opacity: 0;
+      }
+   
+    100%{
+        
+        opacity: 1;
+    }
+    
+  }

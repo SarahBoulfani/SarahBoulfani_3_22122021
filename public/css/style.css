@@ -152,6 +152,48 @@ h1 {
     fill: url(#grad1);
   }
 }
+.card-choice {
+  animation: menu 1200ms ease-in-out both;
+}
+.card-choice--1 {
+  animation-delay: 120ms;
+}
+.card-choice--2 {
+  animation-delay: 240ms;
+}
+.card-choice--3 {
+  animation-delay: 360ms;
+}
+.card-choice--4 {
+  animation-delay: 480ms;
+}
+.card-choice--5 {
+  animation-delay: 600ms;
+}
+.card-choice--6 {
+  animation-delay: 720ms;
+}
+.card-choice--7 {
+  animation-delay: 840ms;
+}
+.card-choice--8 {
+  animation-delay: 960ms;
+}
+.card-choice--9 {
+  animation-delay: 1080ms;
+}
+.card-choice--10 {
+  animation-delay: 1200ms;
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header {
   display: flex;
   justify-content: center;
