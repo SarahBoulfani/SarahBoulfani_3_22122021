@@ -390,32 +390,34 @@ hr {
 .card-choice {
   background: #fff;
   border-radius: 15px;
-  padding: 10px;
-  line-height: 23px;
+  height: 65px;
   margin: 8px 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.card-choice__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 23px;
+  padding: 10px;
+  width: 100%;
+  margin-right: 10px;
 }
 .card-choice__slide {
-  position: absolute;
-  height: 66px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  top: 0;
-  right: 0;
   background: #99E2D0;
-  width: 70px;
+  width: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
 }
 .card-choice .fa-check-circle {
   color: #fff;
-  font-size: 22px;
-}
-.card-choice__text {
-  transition: margin-right 500ms ease-in-out;
+  font-size: 24px;
+  visibility: hidden;
 }
 .card-choice__text h3 {
   font-size: 18px;
@@ -424,7 +426,6 @@ hr {
   white-space: nowrap;
 }
 .card-choice__price {
-  padding-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,15 +439,12 @@ hr {
 .card-choice:hover {
   cursor: pointer;
 }
-.card-choice:hover > .card-choice__text > .card-choice__price :nth-child(2) {
-  margin-right: 60px;
+.card-choice:hover .card-choice__slide {
+  animation: slide 350ms ease-in-out forwards;
 }
-.card-choice:hover > .card-choice__slide {
-  animation: slide 500ms linear;
+.card-choice:hover .card-choice__slide .fa-check-circle {
+  animation: icon 300ms linear;
   visibility: visible;
-}
-.card-choice:hover > .card-choice__slide > .fa-check-circle {
-  animation: icon 500ms linear;
 }
 
 .center {
@@ -457,7 +455,7 @@ hr {
 
 @keyframes icon {
   0% {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -465,14 +463,19 @@ hr {
 }
 @keyframes slide {
   0% {
-    transform: translateX(0%);
+    width: 0;
+  }
+  20% {
+    width: 20px;
+  }
+  50% {
+    width: 30px;
   }
   70% {
-    transform: translateX(-20%);
+    width: 50px;
   }
   100% {
-    transform: translateX(-50%);
-    visibility: hidden;
+    width: 70px;
   }
 }
 .footer {
