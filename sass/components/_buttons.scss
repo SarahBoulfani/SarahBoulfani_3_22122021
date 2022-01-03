@@ -10,6 +10,7 @@
         width: 50%;
     }
     &:hover {
+        transition: all 0.5s;
         opacity: 0.8;
         cursor: pointer;
         // background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
