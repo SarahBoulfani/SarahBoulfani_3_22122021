@@ -15,6 +15,7 @@ body {
 a {
   text-decoration: none;
   color: #000;
+  width: 100%;
 }
 
 ul {
@@ -44,7 +45,12 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .btn--center {
-  width: 50%;
+  width: 40%;
+}
+@media screen and (min-width: 768px) {
+  .btn--center {
+    width: 20%;
+  }
 }
 .btn:hover {
   transition: all 250ms;
@@ -264,6 +270,11 @@ h1 {
   margin: 50px 0;
   padding: 20px 0;
 }
+@media screen and (min-width: 992px) {
+  .fonction {
+    height: 250px;
+  }
+}
 .fonction h2 {
   font-size: 28px;
   padding: 20px;
@@ -274,6 +285,11 @@ h1 {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .fonction__box {
+    flex-direction: row;
+  }
 }
 .fonction__steps {
   display: flex;
@@ -287,6 +303,16 @@ h1 {
   width: 80%;
   height: 70px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .fonction__steps {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fonction__steps {
+    width: 30%;
+  }
 }
 .fonction__steps span {
   height: 28px;
@@ -319,9 +345,25 @@ h1 {
 }
 .restaurant h2 {
   font-size: 28px;
+  margin: 20px 0;
 }
 .restaurant__cards {
   width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1019.98px) {
+  .restaurant__cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 40px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .restaurant__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
 }
 .restaurant__card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -386,6 +428,14 @@ h1 {
 .main--note {
   height: 1037px;
 }
+@media screen and (min-width: 1000px) {
+  .main {
+    height: 330px;
+  }
+  .main--note {
+    height: 410px;
+  }
+}
 
 .global {
   border-top-left-radius: 40px;
@@ -409,8 +459,11 @@ h1 {
   font-size: 30px;
   color: #545353e0;
 }
-.global__menu {
-  margin: 0px;
+@media screen and (min-width: 1000px) {
+  .global__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
 }
 
 .global__menu-choice {
@@ -528,9 +581,14 @@ hr {
   color: #fff;
   background: #353535;
   line-height: 28px;
-  height: 190px;
+  height: 200px;
   padding: 20px;
   margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 100px;
+  }
 }
 .footer a {
   color: #fff;
@@ -538,7 +596,12 @@ hr {
 .footer h3 {
   font-family: "Shrikhand", cursive;
   font-weight: 300;
-  margin-bottom: 15px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer h3 {
+    font-size: 24px;
+  }
 }
 .footer__link .fa-utensils::before {
   content: "\f2e7";
@@ -547,6 +610,17 @@ hr {
 .footer__link .fa-hands-helping::before {
   content: "\f4c4";
   margin-right: 10px;
+}
+.footer__link li {
+  margin: 10px;
+}
+.footer__link li:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .footer__link {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
