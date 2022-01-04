@@ -4,13 +4,13 @@
     background: $gradient;
     border-radius: 30px;
     border: none;
-    
+    opacity: 1;
     @include shadow-box;
     &--center{
         width: 50%;
     }
     &:hover {
-        transition: all 0.5s;
+        transition: all 250ms;
         opacity: 0.8;
         cursor: pointer;
         // background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
