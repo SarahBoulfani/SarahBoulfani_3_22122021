@@ -104,14 +104,19 @@ hr{
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             background: $color-tertiary;
-            width: 0px;
-            @include flex-center;       
+            width: 80px;
+            @include flex-center; 
+            visibility: hidden;
+             
+                 
         } 
 
         .fa-check-circle{
             color: $color-white;
             font-size: 24px; 
-            visibility: hidden;  
+            transform:rotate(0turn);
+            transition: transform 300ms ease-in-out 100ms;
+              
         }
          
         &__text{
@@ -128,29 +133,35 @@ hr{
             justify-content: space-between;
             p:first-child{
             @include overflow;
-          
-           
+            }
+            &:nth-child(2){
+                strong{
+                    margin: 12px;
+                }
+                
             }
         }
         &:hover{
             cursor: pointer;
            &  .card-choice__slide{
-                animation: slide 350ms ease-in-out forwards;
-                     &  .fa-check-circle{
-                        animation: icon 300ms linear;
-                        visibility: visible   
-                    } 
-            }
-            
+               transform-origin: right; 
+               visibility: visible ;
+               margin-right: 0;
+               animation: slide 400ms ease-in-out; 
+               &  .fa-check-circle{
+               transform: rotate(1turn); 
+            }      
+            }    
         }
-      /*    &:not(:hover){
+        &:not(:hover){
+              
             &  .card-choice__slide{
-                animation: slide 150ms ease-in-out reverse forwards;
-               
-                   
-            }
-
-        }  */
+               margin-right: 0;
+               margin-left: -80px;
+               transform-origin: right;
+              animation: slide-reverse 250ms ease-in-out;
+        } 
+    }
     }
 
 
@@ -160,39 +171,61 @@ hr{
 
 }
   
-//animation icon check
- @keyframes icon {
-    0% {
-        transform: rotate(0deg);
-        
-    }
-    100%{
-        transform: rotate(360deg);
-      
-    } 
-} 
-
 //animation slide
-@keyframes slide {
+@keyframes slide{
     0% {
-        width: 0;
-        
-    }
-    20%{
-        width: 20px;
-      
-    } 
-    50%{
-        width: 30px;
-    }
-    70%{
-        width: 50px;
-    }
-
-    100%{
-        width: 70px;
+        transform: scaleX(0);
        
     }
+    20% {
+        transform: scaleX(.20);
+    }
+    30% {
+        transform: scaleX(.30);
+        
+    }
+    50% {
+        transform: scaleX(.50);
+    }
+    80% {
+        transform: scaleX(.85);
+    }
+  
+    100% {
+    transform: scaleX(1)
 }
-
+}
+//slide reverse
+@keyframes slide-reverse{
+    0% {
+        transform: scaleX(1);
+        visibility: visible;
+        
+       
+    }
+    20% {
+        transform: scaleX(.85);
+      
+    }
+    30% {
+        transform: scaleX(.50);
+       
+        
+    }
+    50% {
+        transform: scaleX(.30);
+        
+    }
+    80% {
+        transform: scaleX(.20);
+        
+    }
+  
+    100% {
+    transform: scaleX(0);
+   
+  
+    
+}
+}
   
