@@ -7,10 +7,7 @@
     opacity: 1;
     @include shadow-box;
     &--center{
-        width: 40%;
-        @media screen and (min-width: 768px) {
-           width: 20%;       
-           }
+        width: 200px;  
     }
     &:hover {
         transition: all 250ms;

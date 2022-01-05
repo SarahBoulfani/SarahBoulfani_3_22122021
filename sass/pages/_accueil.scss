@@ -103,8 +103,8 @@
      }
      i{
          font-size: 18px;
-         position: relative;
-         right: 30px;
+         margin-right: 25px;
+         margin-left: 10px;
          color: #545353e0;
      }
      &--purple{
@@ -141,8 +141,7 @@
         @media screen and (min-width: 1020px) {
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            gap: 10px;
-                
+            gap: 10px;    
          }
     }
     &__card{
