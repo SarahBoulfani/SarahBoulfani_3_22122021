@@ -30,11 +30,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 300;
-}
-
 .btn {
   padding: 20px;
   color: #fff;
@@ -316,7 +311,7 @@ h1 {
   height: 235px;
   text-align: center;
 }
-.localisation__info h2 {
+.localisation__info h1 {
   font-size: 30px;
 }
 .localisation__info p {
