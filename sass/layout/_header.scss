@@ -4,5 +4,7 @@
    height: 70px;
    position: relative;
    @include shadow;
-    
+    img{
+       max-width: 45%;
+    }
 }
