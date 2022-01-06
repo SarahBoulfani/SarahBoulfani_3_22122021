@@ -110,6 +110,7 @@ h1 {
     opacity: 0;
   }
 }
+/*heart animation*/
 .icon {
   fill: transparent;
   stroke: black;
@@ -117,10 +118,48 @@ h1 {
   stroke-width: 20;
   cursor: pointer;
   position: relative;
+  /*    .heart-main:hover{
+         stroke: none;
+         animation: heart 2s ease-in-out forwards;
+
+     }
+   } */
+  /*  @keyframes heart {
+     0%{
+         opacity: 0.5;
+
+
+         fill: url(#grad1);
+         transform: scale(0.9);
+     }
+     50% {
+         opacity: 0.7;
+         transform: scale(1);
+     }
+     80%{
+         opacity: 0.8;
+     }
+     90%,100% {
+         opacity: 1;
+
+        transform: scale(1.1);
+     }
+     100% {
+         transform: scale(1);
+
+         fill: url(#grad1);
+       }
+
+   } */
 }
 .icon svg {
   overflow: visible;
   width: 2rem;
+}
+.icon path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1550;
+  transform-origin: center;
 }
 .icon .heart-background {
   position: absolute;
@@ -129,31 +168,54 @@ h1 {
   z-index: -1;
   stroke: none;
 }
-.icon .heart-main:hover {
-  stroke: none;
-  animation: heart 2s ease-in-out forwards;
+.icon .heart-main:hover path {
+  stroke: url(#grad1);
+  animation: stroke-animation 2s ease-in-out forwards;
 }
-
-@keyframes heart {
+.icon .heart-main:hover ~ .heart-background path {
+  animation: fade-animation 2s ease-in-out forwards;
+}
+@keyframes stroke-animation {
   0% {
-    opacity: 0.5;
-    fill: url(#grad1);
-    transform: scale(0.9);
+    stroke-dashoffset: 0;
   }
-  50% {
-    opacity: 0.7;
+  30% {
+    stroke-dashoffset: 1550;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
     transform: scale(1);
   }
   80% {
-    opacity: 0.8;
-  }
-  90%, 100% {
-    opacity: 1;
+    fill: url(#grad1);
     transform: scale(1.1);
   }
-  100% {
+  90% {
     transform: scale(1);
+  }
+  100% {
+    stroke-dashoffset: 3100;
     fill: url(#grad1);
+  }
+}
+
+@keyframes fade-animation {
+  70% {
+    fill: transparent;
+    transform: scale(1);
+  }
+  80% {
+    fill: url(#grad1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
   }
 }
 .card-choice {
