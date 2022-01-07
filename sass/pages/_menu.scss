@@ -1,8 +1,9 @@
-//header
+/*******menu page*******/
+/*header menu*/
 .header--shadow{
     box-shadow: none;
     
-
+/*arrow*/
  .fa-arrow-left::before {
     content: "\f060";
     position: absolute;
@@ -17,7 +18,7 @@
     object-fit: cover;
     
 }
-// Main
+/*Main*/
 .main{
     height: 968px;
     margin-bottom: 170px;
@@ -75,6 +76,7 @@
     }
     
 }
+/*underline*/
 hr{
     width: 47px;
     height: 3px;
@@ -99,7 +101,7 @@ hr{
             width: 100%; 
             margin-right: 10px; 
         }
-        
+        /*checkbox*/
         &__slide{
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -110,7 +112,7 @@ hr{
              
                  
         } 
-
+         /*checkbox icon*/
         .fa-check-circle{
             color: $color-white;
             font-size: 24px; 
@@ -159,19 +161,15 @@ hr{
                margin-right: 0;
                margin-left: -80px;
                transform-origin: right;
-              animation: slide-reverse 250ms ease-in-out;
+               animation: slide-reverse 250ms ease-in-out;
         } 
     }
     }
 
 
-//bouton commander
-.center{
-    @include flex-center;
 
-}
   
-//animation slide
+/*checkbox slide animation*/
 @keyframes slide{
     0% {
         transform: scaleX(0);
@@ -195,7 +193,7 @@ hr{
     transform: scaleX(1)
 }
 }
-//slide reverse
+/*checkbox slide reverse animation*/
 @keyframes slide-reverse{
     0% {
         transform: scaleX(1);
@@ -222,10 +220,7 @@ hr{
     }
   
     100% {
-    transform: scaleX(0);
-   
-  
-    
+    transform: scaleX(0);    
 }
 }
   

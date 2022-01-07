@@ -1,4 +1,4 @@
-//loading-spinner
+/*loading-spinner animation*/
 .loader{
     @include flex-center;
     position: fixed;
@@ -186,7 +186,7 @@
 }
 
 
-  //animation menu
+  /*menu animation*/
   $anim-dur: 1200ms;
   $num-menu: 10;
   $anim-delay: $anim-dur/$num-menu;

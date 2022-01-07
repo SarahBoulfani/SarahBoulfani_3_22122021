@@ -1,4 +1,5 @@
-// localisation
+/********home page********/
+/*localisation*/
 .localisation{
      
      @include flex-center;
@@ -48,13 +49,13 @@
     }
 }
 
-// fonctionnement
+/*fonctionnement*/
 .fonction{
     height: 410px;
     background: $color-white;
     margin: 50px 0;
     padding: 20px 0; 
-     //Large devices
+     /*Large devices*/
      @media screen  and (min-width: 992px){
         height: 250px;
      }
@@ -67,7 +68,7 @@
     &__box{
     @include flex-center;
     @include flex-column;
-    //Large devices
+    /*Large devices*/
     @media screen and (min-width: 992px) {
         flex-direction: row; 
     }
@@ -82,15 +83,16 @@
     width: 80%;
     height: 70px;
     @include shadow-box;
-      // Medium devices
+      /*Medium devices*/
       @media screen and (min-width: 768px) and (max-width: 991.98px) {
         width: 50%;
         
     }
-      //Large devices
+      /*Large devices*/
       @media screen and (min-width: 992px) {
        width: 30%;   
     }
+    /*number*/
      span{
         height: 28px;
         padding: 7px 10px;
@@ -119,7 +121,7 @@
     }
 }
 
-// Restaurant
+/*Restaurant*/
 .restaurant{
    
     padding: 0 20px;
@@ -130,14 +132,14 @@
     }
     &__cards{
       width: 100%;
-          // Medium devices
+          /*Medium devices*/
       @media screen and (min-width: 768px) and (max-width: 1019.98px) {
             display: grid;
             grid-template-rows: repeat(2,1fr);
             grid-template-columns: repeat(2,1fr); 
             gap: 0 40px; 
     }
-        //Large devices
+        /*Large devices*/
         @media screen and (min-width: 1020px) {
             display: grid;
             grid-template-columns: repeat(4,1fr);

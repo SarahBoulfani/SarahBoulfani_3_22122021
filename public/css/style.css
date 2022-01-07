@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+/*general*/
 *,
 *::after,
 *::before {
@@ -26,10 +27,12 @@ img {
   max-width: 100%;
 }
 
+/*typo*/
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/*buttons*/
 .btn {
   padding: 20px;
   color: #fff;
@@ -49,6 +52,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
 }
 
+/*button order*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*loading-spinner animation*/
 .loader {
   display: flex;
   justify-content: center;
@@ -213,6 +224,7 @@ body {
     opacity: 0;
   }
 }
+/*menu animation*/
 .card-choice {
   animation: menu 1200ms ease-in-out both;
 }
@@ -257,6 +269,7 @@ body {
     opacity: 1;
   }
 }
+/*header*/
 .header {
   display: flex;
   justify-content: center;
@@ -270,6 +283,8 @@ body {
   max-width: 45%;
 }
 
+/********home page********/
+/*localisation*/
 .localisation {
   display: flex;
   justify-content: center;
@@ -321,11 +336,13 @@ body {
   margin-bottom: 30px;
 }
 
+/*fonctionnement*/
 .fonction {
   height: 410px;
   background: #fff;
   margin: 50px 0;
   padding: 20px 0;
+  /*Large devices*/
 }
 @media screen and (min-width: 992px) {
   .fonction {
@@ -342,6 +359,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  /*Large devices*/
 }
 @media screen and (min-width: 992px) {
   .fonction__box {
@@ -360,6 +378,9 @@ body {
   width: 80%;
   height: 70px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /*Medium devices*/
+  /*Large devices*/
+  /*number*/
 }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .fonction__steps {
@@ -397,6 +418,7 @@ body {
   font-weight: 600;
 }
 
+/*Restaurant*/
 .restaurant {
   padding: 0 20px;
 }
@@ -406,6 +428,8 @@ body {
 }
 .restaurant__cards {
   width: 100%;
+  /*Medium devices*/
+  /*Large devices*/
 }
 @media screen and (min-width: 768px) and (max-width: 1019.98px) {
   .restaurant__cards {
@@ -461,8 +485,11 @@ body {
   margin-top: 5px;
 }
 
+/*******menu page*******/
+/*header menu*/
 .header--shadow {
   box-shadow: none;
+  /*arrow*/
 }
 .header--shadow .fa-arrow-left::before {
   content: "\f060";
@@ -478,6 +505,7 @@ body {
   object-fit: cover;
 }
 
+/*Main*/
 .main {
   height: 968px;
   margin-bottom: 170px;
@@ -534,6 +562,7 @@ body {
   text-transform: uppercase;
 }
 
+/*underline*/
 hr {
   width: 47px;
   height: 3px;
@@ -550,6 +579,8 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   justify-content: space-between;
+  /*checkbox*/
+  /*checkbox icon*/
 }
 .card-choice__description {
   text-overflow: ellipsis;
@@ -615,12 +646,7 @@ hr {
   animation: slide-reverse 250ms ease-in-out;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/*checkbox slide animation*/
 @keyframes slide {
   0% {
     transform: scaleX(0);
@@ -641,6 +667,7 @@ hr {
     transform: scaleX(1);
   }
 }
+/*checkbox slide reverse animation*/
 @keyframes slide-reverse {
   0% {
     transform: scaleX(1);
@@ -662,6 +689,7 @@ hr {
     transform: scaleX(0);
   }
 }
+/*footer*/
 .footer {
   background: #353535;
   color: #fff;
