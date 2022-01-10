@@ -72,9 +72,7 @@ body {
   z-index: 1;
   background-color: white;
   opacity: 1;
-  visibility: visible;
-  animation: loader 3s linear;
-  animation-fill-mode: forwards;
+  animation: loader 3s linear forwards;
 }
 .loader p {
   position: absolute;
@@ -104,15 +102,12 @@ body {
 }
 @keyframes loader {
   0% {
-    visibility: visible;
     opacity: 1;
   }
   50% {
-    visibility: visible;
     opacity: 0.5;
   }
   100% {
-    visibility: hidden;
     opacity: 0;
   }
 }

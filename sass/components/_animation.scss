@@ -9,16 +9,14 @@
     z-index: 1;
     background-color: white;
     opacity: 1;
-    visibility: visible;
-    animation: loader 3s linear ;
-    animation-fill-mode:forwards;
-    p{
+    animation: loader 3s linear forwards ;
+       p{
         position: absolute;
         font-family: 'Shrikhand', cursive;
         font-weight: 300;
         font-size: 20px;
-    }
-    &__spinner{
+       }
+        &__spinner{
         width: 150px;
         height: 150px;
         border: 10px solid rgb(247, 243, 243);
@@ -29,37 +27,34 @@
         position: absolute;
         animation: spin 2s linear forwards ;
         
-    }
+       }
     
-    }
+}
 
    
     @keyframes spin {
-
         from {
-            transform: rotate(0deg);
+         transform: rotate(0deg);
         }
 
         to {
-            transform: rotate(360deg);
+        transform: rotate(360deg);
         }
     }
         
-         @keyframes loader{
+    @keyframes loader{
          0%{
-             visibility: visible;
-             opacity: 1;
-         }
-         50%{
-            visibility: visible;
-            opacity: 0.5;
+          opacity: 1;
         }
-         100%{
-             visibility: hidden;
-             opacity: 0;
-            
-         }
-         }
+
+         50%{ 
+          opacity: 0.5;
+        }
+
+         100%{ 
+          opacity: 0;  
+        }
+       }
 
 
 
