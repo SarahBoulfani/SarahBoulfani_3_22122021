@@ -108,6 +108,7 @@ body {
     opacity: 0.5;
   }
   100% {
+    visibility: hidden;
     opacity: 0;
   }
 }
