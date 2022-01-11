@@ -47,11 +47,11 @@
         padding: 35px 30px 0 15px;
         font-family: 'Shrikhand';
         font-size: 18px;
-        .fa-heart:before {
-            content: "\f004";
-            font-size: 30px;
-            color: #545353e0;
-           }
+        @media screen and (max-width: 400px) {
+   
+        font-size: 14px;
+              
+         }
     }
     &__menu{
        

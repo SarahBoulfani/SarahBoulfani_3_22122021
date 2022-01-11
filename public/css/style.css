@@ -267,6 +267,7 @@ body {
   width: 90%;
   height: 235px;
   text-align: center;
+  margin: 15px;
 }
 .localisation__info h1 {
   font-size: 30px;
@@ -481,10 +482,10 @@ body {
   font-family: "Shrikhand";
   font-size: 18px;
 }
-.global__title .fa-heart:before {
-  content: "\f004";
-  font-size: 30px;
-  color: #545353e0;
+@media screen and (max-width: 400px) {
+  .global__title {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .global__menu {
