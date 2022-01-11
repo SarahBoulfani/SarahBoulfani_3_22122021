@@ -4,44 +4,41 @@
    color: $color-white;
    background: #353535;
    line-height: 28px;
-   height: 200px;
+   height: 230px;
    padding: 20px;
    margin-top: 50px;
    @media screen and (min-width: 768px) {
-   
-    height: 100px;      
- }
+       height: 120px;      
+   }
     a{
-        color: $color-white;
+     color: $color-white;
     }
     h3{
-        font-family: 'Shrikhand', cursive;
-        font-weight: 300;
-        margin-left: 10px ;
-        @media screen and (min-width: 768px) {
-            font-size: 24px       
-         }
-        
-      
+     font-family: 'Shrikhand', cursive;
+     font-weight: 300;
+     margin-left: 10px ;
+      @media screen and (min-width: 768px) {
+      font-size: 24px       
+      }  
     }
     &__link{
         .fa-utensils::before {
-            content: "\f2e7";
-            margin-right: 10px;
+         content: "\f2e7";
+         margin-right: 10px;
         }
         .fa-hands-helping::before {
-            content: "\f4c4";
-            margin-right: 10px;
+         content: "\f4c4";
+         margin-right: 10px;
         }
         li{
           margin: 10px;
           &:hover{
-              text-decoration: underline;
+            text-decoration: underline;
           }
         }
         @media screen and (min-width: 768px) {
             display: flex; 
               
-         }
+        }
     }
 }

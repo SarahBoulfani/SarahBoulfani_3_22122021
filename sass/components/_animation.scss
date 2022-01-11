@@ -1,22 +1,22 @@
 /*loading-spinner animation*/
 .loader{
-    @include flex-center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: white;
-    opacity: 1;
-    animation: loader 3s linear forwards ;
-       p{
+  @include flex-center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+  opacity: 1;
+  animation: loader 3s linear forwards ;
+      p{
         position: absolute;
         font-family: 'Shrikhand', cursive;
         font-weight: 300;
         font-size: 20px;
-       }
-        &__spinner{
+      }
+      &__spinner{
         width: 150px;
         height: 150px;
         border: 10px solid rgb(247, 243, 243);
@@ -25,62 +25,55 @@
         border-top-color: $color-primary;
         border-bottom-color: $color-secondary;
         position: absolute;
-        animation: spin 2s linear forwards ;
-        
-       }
-    
+        animation: spin 2s linear forwards ; 
+      }   
 }
 
-   
-    @keyframes spin {
-        from {
-         transform: rotate(0deg);
-        }
+  
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
 
-        to {
-        transform: rotate(360deg);
-        }
-    }
+  to {
+    transform: rotate(360deg);
+  }
+}
         
-    @keyframes loader{
-         0%{
-          opacity: 1;
-        }
+@keyframes loader{
+  0%{
+    opacity: 1;
+  }
 
-         50%{ 
-          opacity: 0.5;
-        }
+  50%{ 
+   opacity: 0.5;
+  }
 
-         100%{ 
-          visibility: hidden;
-          opacity: 0;  
-        }
-       }
-
-
-
-
-
+  100%{ 
+    visibility: hidden;
+    opacity: 0;  
+  }
+}
 
 
 /*heart animation*/
 .icon {
-    fill: transparent;
-    stroke: black;
-    font-weight: 100;
-    stroke-width: 20;
-    cursor: pointer;
+  fill: transparent;
+  stroke: black;
+  font-weight: 100;
+  stroke-width: 20;
+  cursor: pointer;
     
-    svg{
-        overflow: visible;
-        width: 30px;
-    }
-    path {
-        stroke-dashoffset: 0;
-        stroke-dasharray: 1550;
-        transform-origin: center;
-    }
+svg{
+  overflow: visible;
+  width: 30px;
+}
 
+path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1550;
+  transform-origin: center;
+}
 
 .heart:hover path {
   stroke:  url(#grad);
@@ -137,8 +130,6 @@ $anim-delay: $anim-dur/$num-menu;
   }
 }
     
-  
-
 @keyframes menu{
 0%{
   transform: translateY(20px);
@@ -148,6 +139,5 @@ $anim-delay: $anim-dur/$num-menu;
 100%{
   transform: translateY(0);
   opacity: 1
-}
-    
+}    
 } 

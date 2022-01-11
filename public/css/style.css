@@ -225,6 +225,54 @@ body {
   max-width: 45%;
 }
 
+/*footer*/
+.footer {
+  background: #353535;
+  color: #fff;
+  background: #353535;
+  line-height: 28px;
+  height: 230px;
+  padding: 20px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 120px;
+  }
+}
+.footer a {
+  color: #fff;
+}
+.footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer h3 {
+    font-size: 24px;
+  }
+}
+.footer__link .fa-utensils::before {
+  content: "\f2e7";
+  margin-right: 10px;
+}
+.footer__link .fa-hands-helping::before {
+  content: "\f4c4";
+  margin-right: 10px;
+}
+.footer__link li {
+  margin: 10px;
+}
+.footer__link li:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .footer__link {
+    display: flex;
+  }
+}
+
 /********home page********/
 /*localisation*/
 .localisation {
@@ -630,53 +678,6 @@ hr {
   }
   100% {
     transform: scaleX(0);
-  }
-}
-/*footer*/
-.footer {
-  background: #353535;
-  color: #fff;
-  background: #353535;
-  line-height: 28px;
-  height: 200px;
-  padding: 20px;
-  margin-top: 50px;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    height: 100px;
-  }
-}
-.footer a {
-  color: #fff;
-}
-.footer h3 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 300;
-  margin-left: 10px;
-}
-@media screen and (min-width: 768px) {
-  .footer h3 {
-    font-size: 24px;
-  }
-}
-.footer__link .fa-utensils::before {
-  content: "\f2e7";
-  margin-right: 10px;
-}
-.footer__link .fa-hands-helping::before {
-  content: "\f4c4";
-  margin-right: 10px;
-}
-.footer__link li {
-  margin: 10px;
-}
-.footer__link li:hover {
-  text-decoration: underline;
-}
-@media screen and (min-width: 768px) {
-  .footer__link {
-    display: flex;
   }
 }
 

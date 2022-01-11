@@ -28,10 +28,9 @@
     @media screen and (min-width: 1000px) {
       height: 330px;
       &--note{
-          height:410px;
-      }
-          
-     }
+        height:410px;
+      }     
+    }
 }
 .global{
     border-top-left-radius: 40px;
@@ -48,19 +47,14 @@
         font-family: 'Shrikhand';
         font-size: 18px;
         @media screen and (max-width: 400px) {
-   
-        font-size: 14px;
-              
-         }
+           font-size: 14px;      
+        }
     }
-    &__menu{
-       
+    &__menu{   
         @media screen and (min-width: 1000px) {
             display: grid;
-            grid-template-columns: repeat(3,33%)
-           
-              
-         }
+            grid-template-columns: repeat(3,33%)      
+        }
     }
 }
 
@@ -68,11 +62,9 @@
     @include flex-column;
     margin: 35px 15px;
     h2{
-       
         font-size: 20px;
         font-weight: 300;
         text-transform: uppercase;
-    
     }
     
 }
@@ -86,14 +78,14 @@ hr{
 }
 
 
-    .card-choice{
-        background: $color-white;
-        border-radius: 15px;
-        height: 65px;
-        margin: 8px 0;
-        @include shadow-box;
-        display: flex;
-        justify-content: space-between;
+.card-choice{
+  background: $color-white;
+  border-radius: 15px;
+  height: 65px;
+  margin: 8px 0;
+  @include shadow-box;
+  display: flex;
+  justify-content: space-between;
         &__description{
             @include overflow;
             line-height: 23px;
@@ -108,29 +100,23 @@ hr{
             background: $color-tertiary;
             width: 80px;
             @include flex-center; 
-            visibility: hidden;
-             
-                 
+            visibility: hidden;         
         } 
          /*checkbox icon*/
         .fa-check-circle{
             color: $color-white;
             font-size: 24px; 
             transform:rotate(0turn);
-            transition: transform 300ms ease-in-out 100ms;
-              
+            transition: transform 300ms ease-in-out 100ms;      
         }
          
-        &__text{
-         
+        &__text{ 
             h3{
-               
                 font-size: 18px;
                 @include overflow;
             }
         }
-        &__price{
-           
+        &__price{  
             @include flex-center;
             justify-content: space-between;
             p:first-child{
@@ -139,8 +125,7 @@ hr{
             &:nth-child(2){
                 strong{
                     margin: 12px;
-                }
-                
+                }    
             }
         }
         &:hover{
@@ -193,34 +178,28 @@ hr{
     transform: scaleX(1)
 }
 }
+
 /*checkbox slide reverse animation*/
 @keyframes slide-reverse{
     0% {
         transform: scaleX(1);
-        visibility: visible;
-        
-       
+        visibility: visible;      
     }
     20% {
-        transform: scaleX(.85);
-      
+        transform: scaleX(.85); 
     }
     30% {
-        transform: scaleX(.50);
-       
-        
+        transform: scaleX(.50);    
     }
     50% {
-        transform: scaleX(.30);
-        
+        transform: scaleX(.30);    
     }
     80% {
-        transform: scaleX(.20);
-        
+        transform: scaleX(.20);    
     }
   
     100% {
-    transform: scaleX(0);    
-}
+        transform: scaleX(0);   
+    }
 }
   
